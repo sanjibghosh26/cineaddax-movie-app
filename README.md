@@ -6,7 +6,7 @@
 
 A responsive movie discovery app where you can explore, search, and save your favorite films, with a personal watchlist that follows you across devices.
 
-[Live Demo](https://your-app.vercel.app) · [Report a Bug](https://github.com/sanjibghosh26/cineaddax-movie-app/issues) · [Request a Feature](https://github.com/sanjibghosh26/cineaddax-movie-app/issues)
+[Live Demo](https://cineaddax-movie-app.vercel.app/) · [Report a Bug](https://github.com/sanjibghosh26/cineaddax-movie-app/issues) · [Request a Feature](https://github.com/sanjibghosh26/cineaddax-movie-app/issues)
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
