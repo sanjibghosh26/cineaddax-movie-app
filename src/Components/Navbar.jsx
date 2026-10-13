@@ -15,9 +15,22 @@ function Navbar() {
   const [searchQuery, setSearchQuery] = useState("");
   const [profileOpen, setProfileOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [failedProfilePhoto, setFailedProfilePhoto] = useState(null);
 
   const navigate = useNavigate();
   const { user, logout } = UseAuth();
+
+  // Show the profile image only if it has not failed to load.
+  const profilePhoto = user?.photoURL;
+
+  const showProfilePhoto =
+    Boolean(profilePhoto) && failedProfilePhoto !== profilePhoto;
+
+  const handleProfileImageError = () => {
+    if (profilePhoto) {
+      setFailedProfilePhoto(profilePhoto);
+    }
+  };
 
   const closeMobileMenu = useCallback(() => {
     setMobileMenuOpen(false);
@@ -122,10 +135,12 @@ function Navbar() {
               aria-label="Open profile menu"
               aria-expanded={profileOpen}
             >
-              {user.photoURL ? (
+              {showProfilePhoto ? (
                 <img
-                  src={user.photoURL}
+                  src={profilePhoto}
                   alt="Profile"
+                  referrerPolicy="no-referrer"
+                  onError={handleProfileImageError}
                   className="h-8 w-8 rounded-full object-cover sm:h-9 sm:w-9"
                 />
               ) : (
@@ -140,13 +155,16 @@ function Navbar() {
               <ChevronDown className="mr-1 h-4 w-4 text-slate-300" />
             </button>
 
+            {/* Profile Dropdown */}
             {profileOpen && (
               <div className="absolute right-0 top-full z-50 mt-3 w-64 rounded-xl border border-white/10 bg-slate-900 p-3 shadow-2xl">
                 <div className="flex items-center gap-3 border-b border-white/10 px-2 pb-3">
-                  {user.photoURL ? (
+                  {showProfilePhoto ? (
                     <img
-                      src={user.photoURL}
+                      src={profilePhoto}
                       alt=""
+                      referrerPolicy="no-referrer"
+                      onError={handleProfileImageError}
                       className="h-10 w-10 rounded-full object-cover"
                     />
                   ) : (
@@ -159,6 +177,7 @@ function Navbar() {
                     <p className="truncate text-sm font-semibold text-white">
                       {user.displayName || "Movie Lover"}
                     </p>
+
                     <p className="truncate text-xs text-slate-400">
                       {user.email}
                     </p>
