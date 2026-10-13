@@ -1,4 +1,3 @@
-
 <div align="center">
 
 # 🎬 CINEADDAX
@@ -7,7 +6,7 @@
 
 A responsive movie discovery app where you can explore, search, and save your favorite films, with a personal watchlist that follows you across devices.
 
-[Live Demo](https://your-app.vercel.app) · [Report a Bug](https://github.com/sanjibghosh26/CINEADDAX/issues) · [Request a Feature](https://github.com/sanjibghosh26/CINEADDAX/issues)
+[Live Demo](https://your-app.vercel.app) · [Report a Bug](https://github.com/sanjibghosh26/cineaddax-movie-app/issues) · [Request a Feature](https://github.com/sanjibghosh26/cineaddax-movie-app/issues)
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -23,25 +22,6 @@ A responsive movie discovery app where you can explore, search, and save your fa
 **CINEADDAX** is a movie discovery web application built with React and Tailwind CSS. Users can browse popular and trending movies, search by title, explore genres, view detailed movie information, watch trailers, and build a personal watchlist.
 
 Movie data is powered by the **TMDB API**, while **Firebase** handles authentication and stores each user's watchlist in **Cloud Firestore**.
-
-<!--
-SCREENSHOTS: after deploying, add the 6 images to the /screenshots folder,
-then delete the opening and closing comment markers around this section.
-
-## 📸 Screenshots
-
-| Home | Movies |
-|:---:|:---:|
-| ![Home](./screenshots/home.png) | ![Movies](./screenshots/movies.png) |
-
-| Movie Details | Login |
-|:---:|:---:|
-| ![Movie Details](./screenshots/movie-details.png) | ![Login](./screenshots/login.png) |
-
-| Watchlist | Responsive Design |
-|:---:|:---:|
-| ![Watchlist](./screenshots/watchlist.png) | ![Responsive](./screenshots/responsive.png) |
--->
 
 ## ✨ Features
 
@@ -75,18 +55,10 @@ then delete the opening and closing comment markers around this section.
 ## 📂 Project Structure
 
 ```text
-cineaddax/
+cineaddax-movie-app/
 ├── public/
 │   ├── favicon.svg              # Browser tab icon
 │   └── Google_logo.svg          # Logo used on the Google sign-in button
-│
-├── screenshots/                 # Images used in this README
-│   ├── home.png
-│   ├── movies.png
-│   ├── movie-details.png
-│   ├── login.png
-│   ├── watchlist.png
-│   └── responsive.png
 │
 ├── src/
 │   ├── Components/              # Reusable UI components
@@ -156,8 +128,8 @@ cineaddax/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/CINEADDAX.git
-   cd CINEADDAX
+   git clone https://github.com/sanjibghosh26/cineaddax-movie-app.git
+   cd cineaddax-movie-app
    ```
 
 2. **Install dependencies**
@@ -261,6 +233,3 @@ cineaddax/
 <sub>This product uses the TMDB API but is not endorsed or certified by TMDB. Built for learning and portfolio purposes.</sub>
 
 </div>
-
-
-
