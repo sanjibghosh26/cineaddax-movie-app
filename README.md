@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <div align="center">
 
 # 🎬 CINEADDAX
@@ -261,7 +261,6 @@ cineaddax/
 <sub>This product uses the TMDB API but is not endorsed or certified by TMDB. Built for learning and portfolio purposes.</sub>
 
 </div>
-=======
-# cineaddax-movie-app
-A responsive movie discovery app built with React, Tailwind CSS, Firebase, and the TMDB API. Search movies, watch trailers, and save a personal watchlist.
->>>>>>> 5b6e5d7a9ddea368db0a465861653545da676d71
+
+
+
