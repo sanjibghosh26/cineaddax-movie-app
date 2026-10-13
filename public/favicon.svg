@@ -1,0 +1,179 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 500 500"
+  width="100%"
+  height="100%"
+>
+  <defs>
+    <!-- Background Shadow / Glow Filter -->
+    <filter
+      id="pinkGlow"
+      x="-30%"
+      y="-30%"
+      width="160%"
+      height="160%"
+    >
+      <feGaussianBlur stdDeviation="10" result="blur" />
+
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Vibrant Pink Gradient -->
+    <linearGradient
+      id="mainPink"
+      x1="0%"
+      y1="0%"
+      x2="100%"
+      y2="100%"
+    >
+      <stop offset="0%" stop-color="#FF3377" />
+      <stop offset="50%" stop-color="#E60067" />
+      <stop offset="100%" stop-color="#990044" />
+    </linearGradient>
+
+    <!-- Film Gradient -->
+    <linearGradient
+      id="filmGradient"
+      x1="0%"
+      y1="100%"
+      x2="100%"
+      y2="0%"
+    >
+      <stop offset="0%" stop-color="#CC0055" />
+      <stop offset="100%" stop-color="#FF6699" />
+    </linearGradient>
+
+    <!-- Highlight Gradient -->
+    <linearGradient
+      id="highlightGlow"
+      x1="0%"
+      y1="0%"
+      x2="100%"
+      y2="50%"
+    >
+      <stop offset="0%" stop-color="#FFAAC8" />
+      <stop offset="100%" stop-color="#E60067" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main C Logo - Slightly Enlarged -->
+  <g
+    filter="url(#pinkGlow)"
+    transform="translate(-10 -10) scale(1.04)"
+  >
+
+    <!-- Outer Dynamic Swirl -->
+    <path
+      d="M 330 90
+         C 370 70 385 105 380 120
+         C 375 145 330 165 290 165
+         C 230 165 180 200 165 250
+         C 185 190 250 125 330 90 Z"
+      fill="url(#highlightGlow)"
+    />
+
+    <!-- Main C Shape -->
+    <path
+      d="M 365 135
+         C 330 110 270 110 215 140
+         C 145 180 120 260 145 335
+         C 160 380 205 425 270 435
+         C 345 445 375 395 380 375
+         C 360 395 315 410 265 395
+         C 190 370 170 290 200 225
+         C 225 175 290 145 365 135 Z"
+      fill="url(#mainPink)"
+    />
+
+    <!-- Cinema Film Strip Curve -->
+    <path
+      d="M 275 175
+         C 220 185 185 235 185 285
+         C 185 340 225 385 280 380
+         C 235 360 215 320 220 280
+         C 225 235 250 195 275 175 Z"
+      fill="url(#filmGradient)"
+    />
+
+    <!-- Film Sprocket Holes -->
+    <g fill="#1A000B" opacity="0.85">
+
+      <rect
+        x="238"
+        y="195"
+        width="8"
+        height="6"
+        rx="1.5"
+        transform="rotate(-30 242 198)"
+      />
+
+      <rect
+        x="218"
+        y="222"
+        width="8"
+        height="6"
+        rx="1.5"
+        transform="rotate(-15 222 225)"
+      />
+
+      <rect
+        x="206"
+        y="254"
+        width="8"
+        height="6"
+        rx="1.5"
+        transform="rotate(0 210 257)"
+      />
+
+      <rect
+        x="207"
+        y="288"
+        width="8"
+        height="6"
+        rx="1.5"
+        transform="rotate(18 211 291)"
+      />
+
+      <rect
+        x="218"
+        y="320"
+        width="8"
+        height="6"
+        rx="1.5"
+        transform="rotate(35 222 323)"
+      />
+
+      <rect
+        x="240"
+        y="348"
+        width="8"
+        height="6"
+        rx="1.5"
+        transform="rotate(52 244 351)"
+      />
+
+    </g>
+
+    <!-- Bottom Wave Swirl -->
+    <path
+      d="M 275 390
+         C 320 410 365 390 385 370
+         C 355 385 315 375 285 360
+         C 255 345 270 380 275 390 Z"
+      fill="url(#highlightGlow)"
+    />
+
+    <!-- Bottom Accent -->
+    <path
+      d="M 300 420
+         C 350 430 380 395 385 385
+         C 365 405 325 415 290 405
+         C 265 400 285 418 300 420 Z"
+      fill="url(#mainPink)"
+    />
+
+  </g>
+</svg>
